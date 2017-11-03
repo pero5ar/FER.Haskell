@@ -6,17 +6,6 @@ import Data.List
 import Data.Char
 --
 
-{-
-    Here you should provide your solutions to in-class exercises.
-
-    Make sure that ALL FUNCTIONS (including exXXX) have correct TYPE SIGNATURES.
-
-    You should include solutions from following lectures :
-    - http://www.fer.unizg.hr/_download/repository/puh-2017-lecture-06.lhs
-
-    DON'T change function names, just remove 'undefined' and write your own
-    definition for that function.
--}
 
 {-LECTURE 06-} -- http://www.fer.unizg.hr/_download/repository/puh-2017-lecture-06.lhs
 
