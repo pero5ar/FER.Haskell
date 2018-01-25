@@ -360,11 +360,15 @@ main31 = do
   3.2.
   - Give recursive definitions for 'sequence' and 'sequence_'.
 -}
+sequence' = mapM id
+sequence_' = mapM_ id
 
 {-
   3.3.
   - Give a recursive definitions for 'mapM' and 'mapM_'.
 -}
+mapM' f = sequence . fmap f
+mapM_' f = sequence_ . fmap f
 
 {-
   3.4.
@@ -411,7 +415,9 @@ filterWords = undefined
 -}
 
 wc :: FilePath -> IO (Int, Int, Int)
-wc = undefined
+wc f = do 
+  s <- readFile f
+  return (length s, length $ words s, length $ lines s)
 
 {-
   5.2. 
